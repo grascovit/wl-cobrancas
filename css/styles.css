@@ -675,6 +675,10 @@ section#contact {
     background-repeat: no-repeat;
 }
 
+section#contact .text-muted {
+    color: #bfbfbf;
+}
+
 section#contact .section-heading {
     color: #fff;
 }

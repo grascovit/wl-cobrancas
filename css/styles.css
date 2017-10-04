@@ -133,7 +133,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #3D99F5;
+    border-color: #5EC6C8;
     color: #fff;
     background-color: #5EC6C8;
 }
@@ -419,6 +419,7 @@ section h3.section-subheading {
     margin: 0 auto;
     padding: 25px;
     max-width: 338px;
+    height: 110px;
     text-align: center;
     background-color: #fff;
 }

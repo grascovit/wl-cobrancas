@@ -902,6 +902,7 @@ body {
 .modal-body > p {
     margin-top: 48px;
     font-size: 1.8rem;
+    text-align: justify;
 }
 
 .left-list {

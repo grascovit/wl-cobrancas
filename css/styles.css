@@ -173,14 +173,19 @@ fieldset[disabled] .btn-xl.active {
     background-color: #222;
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand-mini {
     color: #333333;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
-.navbar-default .navbar-brand.active {
+.navbar-default .navbar-brand.active,
+.navbar-default .navbar-brand-mini:hover,
+.navbar-default .navbar-brand-mini:focus,
+.navbar-default .navbar-brand-mini:active,
+.navbar-default .navbar-brand-mini.active {
     color: #5EC6C8;
 }
 
@@ -202,7 +207,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand,
-.navbar-default .navbar-brand:focus {
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand-mini,
+.navbar-default .navbar-brand-mini:focus {
     color: #333333;
 }
 
@@ -247,7 +254,8 @@ fieldset[disabled] .btn-xl.active {
         transition: padding .3s;
     }
 
-    .navbar-default .navbar-brand, .navbar-brand>a {
+    .navbar-default .navbar-brand, .navbar-brand>a,
+    .navbar-default .navbar-brand-mini, .navbar-brand-mini>a {
         font-size: 2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
@@ -263,7 +271,8 @@ fieldset[disabled] .btn-xl.active {
         background-color: #f7f7f7;
     }
 
-    .navbar-default.navbar-shrink .navbar-brand {
+    .navbar-default.navbar-shrink .navbar-brand,
+    .navbar-default.navbar-shrink .navbar-brand-mini {
         font-size: 1.5em;
     }
 }
@@ -368,19 +377,22 @@ section h3.section-subheading {
     text-transform: none;
 }
 
-#benefits .benefit-item {
+#benefits .benefit-item, 
+#booklets .booklet-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#benefits .benefit-item .benefit-link {
+#benefits .benefit-item .benefit-link,
+#booklets .booklet-item .booklet-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 338px;
 }
 
-#benefits .benefit-item .benefit-link .benefit-hover {
+#benefits .benefit-item .benefit-link .benefit-hover,
+#booklets .booklet-item .booklet-link .booklet-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -391,11 +403,13 @@ section h3.section-subheading {
     transition: all ease .5s;
 }
 
-#benefits .benefit-item .benefit-link .benefit-hover:hover {
+#benefits .benefit-item .benefit-link .benefit-hover:hover,
+#booklets .booklet-item .booklet-link .booklet-hover:hover {
     opacity: 1;
 }
 
-#benefits .benefit-item .benefit-link .benefit-hover .benefit-hover-content {
+#benefits .benefit-item .benefit-link .benefit-hover .benefit-hover-content,
+#booklets .booklet-item .booklet-link .booklet-hover .booklet-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -406,43 +420,56 @@ section h3.section-subheading {
     color: #fff;
 }
 
-#benefits .benefit-item .benefit-link .benefit-hover .benefit-hover-content i {
+#benefits .benefit-item .benefit-link .benefit-hover .benefit-hover-content i,
+#booklets .booklet-item .booklet-link .booklet-hover .booklet-hover-content i {
     margin-top: -12px;
 }
 
 #benefits .benefit-item .benefit-link .benefit-hover .benefit-hover-content h3,
-#benefits .benefit-item .benefit-link .benefit-hover .benefit-hover-content h4 {
+#benefits .benefit-item .benefit-link .benefit-hover .benefit-hover-content h4,
+#booklets .booklet-item .booklet-link .booklet-hover .booklet-hover-content h3,
+#booklets .booklet-item .booklet-link .booklet-hover .booklet-hover-content h4 {
     margin: 0;
 }
 
-#benefits .benefit-item .benefit-caption {
+#benefits .benefit-item .benefit-caption,
+#booklets .booklet-item .booklet-caption {
     margin: 0 auto;
     padding: 25px;
     max-width: 338px;
-    height: 110px;
+    height: 125px;
     text-align: center;
     background-color: #fff;
 }
 
-#benefits .benefit-item .benefit-caption h4 {
+#benefits .benefit-item .benefit-caption h4,
+#booklets .booklet-item .booklet-caption h4 {
     margin: 0;
     text-transform: none;
 }
 
-#benefits .benefit-item .benefit-caption p {
+#benefits .benefit-item .benefit-caption p,
+#booklets .booklet-item .booklet-caption p {
     margin: 0;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
 }
 
-#benefits * {
+#benefits *,
+#booklets * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #benefits .benefit-item {
+    #benefits .benefit-item,
+    #booklets .booklet-item {
         margin: 0 0 30px;
     }
+}
+
+.faq {
+    font-size: 1.8rem;
+    text-align: justify;
 }
 
 .how-to {
@@ -889,17 +916,6 @@ body {
     webkit-tap-highlight-color: #5EC6C8;
 }
 
-@media(max-width: 768px) {
-    .navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-        background-color: #f7f7f7;
-        border-color: #f7f7f7;
-    }
-
-    .navbar-default .nav li a, .navbar-default .navbar-brand, .navbar-default .navbar-brand:focus {
-        color: #f7f7f7;
-    }
-}
-
 .modal-body > p {
     margin-top: 48px;
     font-size: 1.8rem;
@@ -912,4 +928,31 @@ body {
 
 .left-list > li {
     font-size: 1.7rem;
+}
+
+@media(max-width: 767px) {
+    .navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+        background-color: #f7f7f7;
+        border-color: #f7f7f7;
+    }
+
+    .navbar-default .nav li a, .navbar-default .navbar-brand, .navbar-default .navbar-brand:focus {
+        color: #f7f7f7;
+    }
+}
+
+@media(min-width: 1200px) {
+    .navbar-default .navbar-brand-mini, .navbar-default .navbar-brand-mini:focus {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1199px) {
+    .navbar-default .navbar-brand-mini, .navbar-default .navbar-brand-mini:focus {
+        display: inline-block;
+    }
+
+    .navbar-default .navbar-brand, .navbar-default .navbar-brand:focus {
+        display: none;
+    }
 }

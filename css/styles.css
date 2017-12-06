@@ -538,7 +538,10 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #5EC6C8;
+}
+
+.how-to>li .how-to-final {
+  background-color: #5EC6C8;  
 }
 
 .how-to>li .how-to-image h4 {

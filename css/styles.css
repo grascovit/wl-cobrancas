@@ -700,6 +700,10 @@ aside.clients img {
     margin: 50px auto;
 }
 
+.branches {
+  margin-bottom: 3.5em;
+}
+
 section#contact {
     background-color: #222;
     background-image: url(../img/map-image.png);

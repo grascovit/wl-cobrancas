@@ -23,7 +23,7 @@ $(function() {
             submitButton.prop('disabled', true);
 
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "../mail/contact_me.php",
                 type: "POST",
                 data: {
                     name: name,

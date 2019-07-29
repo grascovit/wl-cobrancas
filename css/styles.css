@@ -16,6 +16,10 @@ html {
     color: #5EC6C8;
 }
 
+.text-justified {
+    text-align: justify;
+}
+
 p {
     font-size: 14px;
     line-height: 1.75;
@@ -377,6 +381,11 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+.explanation {
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
 #benefits .benefit-item, 
 #booklets .booklet-item {
     right: 0;
@@ -468,6 +477,7 @@ section h3.section-subheading {
 }
 
 .faq {
+    padding: 0 18px;
     font-size: 1.8rem;
     text-align: justify;
 }
@@ -842,7 +852,7 @@ ul.social-buttons li a:active {
 }
 
 .benefit-modal .modal-content p {
-    margin-bottom: 30px;
+    margin-bottom: 12px;
 }
 
 .benefit-modal .modal-content p.item-intro {
@@ -924,9 +934,28 @@ body {
 }
 
 .modal-body > p {
-    margin-top: 48px;
+    margin-top: 12px;
     font-size: 1.8rem;
     text-align: justify;
+}
+
+.modal-body > h4 {
+    display: flex;
+    margin-top: 48px;
+}
+
+.left-list.general-advantages {
+    padding: 0 18px;
+    margin-top: 48px;
+}
+
+.left-list.condo-advantages {
+    padding: 0 18px;
+    margin-top: 12px;
+}
+
+.left-list.credit-recovery {
+    padding: 0 18px;
 }
 
 .left-list {

@@ -35,6 +35,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
+    text-decoration: none;
 }
 
 a {
@@ -318,6 +319,20 @@ header .intro-text .intro-heading {
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
+}
+
+header .intro-text .social {
+    margin-top: 2em;
+}
+
+header .intro-text .social .social-icon {
+    width: 42px;
+    margin-right: 0.7em;
+    text-decoration: none;
+}
+
+header .intro-text .social .social-link:hover {
+    text-decoration: none;
 }
 
 @media(min-width:768px) {
@@ -964,6 +979,14 @@ body {
 
 .left-list > li {
     font-size: 1.7rem;
+}
+
+.logo-instagram {
+    width: 40px;
+}
+
+.logo-facebook {
+    width: 40px;
 }
 
 @media(max-width: 767px) {
